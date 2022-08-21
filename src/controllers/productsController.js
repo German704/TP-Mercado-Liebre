@@ -32,6 +32,8 @@ const controller = {
 	// Create -  Method to store
 	store: (req, res) => {
 		let id = +req.params.id;
+
+		let image = req.file 
 		const {name,price,discount,category,description} = req.body;
 
 		let newProduct = {
@@ -41,7 +43,7 @@ const controller = {
 			discount: discount,
 			category: category,
 			description: description,
-			image: "default-image.png"
+			image: image == null ? "default-image.png" : image.filename 
 		};
 		products.push(newProduct);
 		guardar(products)

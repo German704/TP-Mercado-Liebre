@@ -29,19 +29,16 @@
 						    <p class="product-detail-price small">
 								<span>$<%= prices %> </span>
 								/
-								<b><%= product.discount > 0 ? `${product.discount}% OFF`: "" %> </b>
+								<b><%= `${product.discount}% OFF` %></b>
 							</p>
-						<% } else { null } %>
-							 
-							<% if (product.discount > 0) { %>
 							 <p class="product-detail-price">
 								$<%= discounts %>  
 							</p>
-							<% } else { %>
-							<p class="product-detail-price">
+						<% } else {  %> 
+						    <p class="product-detail-price">
 								$<%- prices %>
 							</p>
-							<% } %> 
+						<% } %>
 
 						<ul class="actions-list">
 							<li>

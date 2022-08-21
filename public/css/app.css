@@ -406,6 +406,16 @@ textarea.form-input {
   resize: vertical;
   padding: 15px;
 }
+.fileImg{
+  margin-bottom: 20px;
+}
+.file{
+  padding: 8px;
+  border: 1px solid var(--gray);
+  margin-left: 10px;
+  border-radius: 8px;
+  font-size: 1.5em;
+}
 
 
 
